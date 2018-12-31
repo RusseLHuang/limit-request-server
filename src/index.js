@@ -3,7 +3,7 @@ const requestIp = require('request-ip');
 const redisClient = require('./redis');
 const app = express();
 
-const PORT = 3737;
+const PORT = process.env.PORT || 3737;
 const limitRequestPerMin = 60;
 const limitTime = 60; // 1 minute
 const time = ':time';
