@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "NODE_ENV=dev mocha --timeout 80000 --exit",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master && heroku open"
   },
   "author": "",
   "license": "ISC",
